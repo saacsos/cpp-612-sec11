@@ -7,7 +7,8 @@ class Theater {
 private:
     string name;
     int capacity;
-    Movie* mv;
+    Movie** movies;  
+    int size;
 
 public:
     Theater(string, int);
@@ -15,7 +16,7 @@ public:
     void setCapacity(int);
     int getCapacity();
 
-    void setMovie(Movie*);
+    void addMovie(Movie*); 
 
-    string showMovie();
+    string showMovie(); // ให้ show movie ทั้งหมดใน array/linked list
 };
